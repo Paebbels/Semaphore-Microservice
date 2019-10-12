@@ -10,14 +10,17 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('../Semaphore'))
+#sys.path.insert(0, os.path.abspath('_extensions'))
+#sys.path.insert(0, os.path.abspath('_themes/sphinx_rtd_theme'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'Semaphore Micro-Service'
+project = 'Semaphore Microservice'
 copyright = '2019-2020, Patrick Lehmann'
 author = 'Patrick Lehmann'
 
@@ -31,8 +34,25 @@ release = 'v0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+# Sphinx theme
 	"sphinx_rtd_theme",
-	"sphinxjsondomain"
+# Standard Sphinx extensions
+	"sphinx.ext.autodoc",
+	'sphinx.ext.extlinks',
+	'sphinx.ext.intersphinx',
+	'sphinx.ext.inheritance_diagram',
+	'sphinx.ext.todo',
+	'sphinx.ext.graphviz',
+	'sphinx.ext.mathjax',
+	'sphinx.ext.ifconfig',
+	'sphinx.ext.viewcode',
+# SphinxContrib extensions
+
+# Other extensions
+#	'DocumentMember',
+# local extensions (patched)
+
+# local extensions
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,3 +80,35 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# ==============================================================================
+# Sphinx.Ext.InterSphinx
+# ==============================================================================
+intersphinx_mapping = {
+	'python':          ('https://docs.python.org/3', None),
+	#	'pyFlags':          ('http://pyFlags.readthedocs.io/en/latest', None),
+	'pyExceptions':    ('http://pyExceptions.readthedocs.io/en/latest', None),
+	'pyAttributes':    ('http://pyAttributes.readthedocs.io/en/latest', None),
+	'pyGenericPath':   ('http://pyGenericPath.readthedocs.io/en/latest', None),
+	'pyHTTPInterface': ('http://pyHTTPInterface.readthedocs.io/en/latest', None),
+	'pyHTTPReqRouter': ('http://pyHTTPRequestRouter.readthedocs.io/en/latest', None),
+	'pyHTTPServer':    ('http://pyHTTPServer.readthedocs.io/en/latest', None),
+	'SphinxEx':        ('http://SphinxExtensions.readthedocs.io/en/latest', None),
+}
+
+
+# ==============================================================================
+# Sphinx.Ext.ExtLinks
+# ==============================================================================
+extlinks = {
+	'issue': ('https://github.com/Paebbels/Semaphore-Microservice/issues/%s', 'issue #'),
+	'pull':  ('https://github.com/Paebbels/Semaphore-Microservice/pull/%s', 'pull request #'),
+	'src':   ('https://github.com/Paebbels/Semaphore-Microservice/blob/master/Semaphore/%s?ts=2', None),
+#	'test':  ('https://github.com/Paebbels/Semaphore-Microservice/blob/master/test/%s?ts=2', None)
+}
+
+
+# ==============================================================================
+# Sphinx.Ext.Graphviz
+# ==============================================================================
+graphviz_output_format = "svg"
