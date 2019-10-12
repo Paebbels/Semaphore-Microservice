@@ -1,0 +1,16 @@
+httpServer:
+  hostname: localhost
+  port:     5000
+  tls:      False
+#    certificate:  Semaphore.crt
+
+semaphores:
+  FlexLM-Riviera:
+    kind:         NaturalRangeLimited
+    initialValue: 5
+    maximumValue: 5
+
+  Test-1:
+    kind:         NaturalRangeLimited
+    initialValue: 2
+    maximumValue: 5
