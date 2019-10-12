@@ -1,3 +1,12 @@
+![PyPI - License](https://img.shields.io/pypi/l/Semaphore-Microservice)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Paebbels/Semaphore-Microservice) 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Paebbels/Semaphore-Microservice)
+[![Documentation Status](https://readthedocs.org/projects/semaphore-microservice/badge/?version=latest)](https://semaphore-microservice.readthedocs.io/en/latest/?badge=latest)  
+[![PyPI](https://img.shields.io/pypi/v/Semaphore-Microservice)](https://pypi.org/project/Semaphore-Microservice/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Semaphore-Microservice)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/Semaphore-Microservice)
+![PyPI - Status](https://img.shields.io/pypi/status/Semaphore-Microservice)
+
 # Semaphore Microservice
 
 This HTTP-based microservice offers a ReST API to acquire and release resources
