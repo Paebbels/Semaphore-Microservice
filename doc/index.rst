@@ -1,22 +1,52 @@
-.. Semaphore Micro-Service documentation master file, created by
-   sphinx-quickstart on Thu Oct 10 14:11:42 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Semaphoe Microservice Documentation
+###################################
 
-Welcome to Semaphore Micro-Service's documentation!
-===================================================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-   
-   Configuration.rst
+This HTTP-based microservice offers a ReST API to acquire and release resources
+that are limited with a *semaphore* semantic.
 
 
 
-Indices and tables
+Installation/Updates
+********************
+
+Installation using PIP
+======================
+
+.. code-block:: bash
+
+   pip3 install Semaphore-Microservice
+
+
+Updating using PIP
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. code-block:: bash
+
+   pip3 install -U Semaphore-Microservice
+
+------------------------------------
+
+.. |docdate| date:: %b %d, %Y - %H:%M
+
+.. only:: html
+
+   This document was generated on |docdate|.
+
+.. toctree::
+   :caption: Getting Started
+   :hidden:
+
+   Configuration
+
+.. toctree::
+   :caption: Classes
+   :hidden:
+
+
+
+.. toctree::
+   :caption: Appendix
+   :hidden:
+
+   genindex
+   py-modindex
