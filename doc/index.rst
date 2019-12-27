@@ -1,28 +1,23 @@
-Semaphoe Microservice Documentation
-###################################
+Semaphore Microservice Documentation
+####################################
 
 This HTTP-based microservice offers a ReST API to acquire and release resources
 that are limited with a *semaphore* semantic.
 
 
+## Contributors
 
-Installation/Updates
-********************
-
-Installation using PIP
-======================
-
-.. code-block:: bash
-
-   pip3 install Semaphore-Microservice
+* [Patrick Lehmann](https://github.com/Paebbels) (Maintainer)
 
 
-Updating using PIP
-==================
+## License
 
-.. code-block:: bash
+This library is licensed under [Apache License 2.0](LICENSE.md)
 
-   pip3 install -U Semaphore-Microservice
+-------------------------
+
+SPDX-License-Identifier: Apache-2.0
+
 
 ------------------------------------
 
@@ -31,6 +26,13 @@ Updating using PIP
 .. only:: html
 
    This document was generated on |docdate|.
+
+.. toctree::
+   :caption: Overview
+   :hidden:
+
+   Installation
+   Dependencies
 
 .. toctree::
    :caption: Getting Started
@@ -48,5 +50,8 @@ Updating using PIP
    :caption: Appendix
    :hidden:
 
+   License
    genindex
+
+.. #
    py-modindex
