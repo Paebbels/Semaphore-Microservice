@@ -1,4 +1,4 @@
-Semaphoe Microservice Documentation
+Semaphore Microservice Documentation
 ###################################
 
 This HTTP-based microservice offers a ReST API to acquire and release resources
